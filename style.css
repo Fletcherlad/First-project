@@ -1,0 +1,405 @@
+
+.regsign{
+	background-color: transparent !important;
+	margin-top: 8px;
+}
+
+.jumbotron{
+	background-image: url(treeback.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 125px;
+	font-family: 'Rancho', cursive;
+	word-spacing: 20px;
+	
+}
+
+.navbar-brand{
+	color: white !important;
+	font-family: 'Bangers', cursive;
+	font-size: 45px;
+}
+
+.navbar-brand:hover{
+	opacity: 0.7;
+	color: white !important;
+	font-family: 'Bangers', cursive;
+	font-size: 45px;
+}
+
+
+
+.intro{
+	font-size: 25px;
+	font-family: 'Architects Daughter', cursive;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+.slogan
+{
+	margin-top:-40px;
+	margin-left: -80px;
+}
+
+.up_nav
+{
+	background-color: #27ae60 !important;
+	color: white !important;
+}
+
+.navtile > li > a
+{
+	color: white !important;
+}
+
+.reason{
+	background-color: #bdc3c7;
+	height: 200px;
+	color: black;
+	font-family: 'Delius', cursive;
+}
+
+.contact{
+	background-color: #2c3e50;
+	height: auto;
+	margin-top: 2px;
+	text-align: center;
+	color: white;
+	font-family: 'Delius', cursive;
+	padding-bottom: 20px;
+}
+.area1{
+	background-color: : #E3F2FD;
+	width:100%;
+	height:300px;
+	float:right;
+	margin-bottom:50px;
+
+	}
+.area2{
+	background-color: : #E3F2FD;
+	width:100%;
+	height:380px;
+	float:right;
+	margin-bottom:50px;
+	}
+
+.single_product{
+
+	width:230px;
+	height:230px;
+	margin: 10px 10px 10px 10px;
+	float:left;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+
+
+
+.single_product img{
+	width:230px;
+	height:200px;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.single_product img:hover{
+	width:240px;
+	height:230px;
+}
+
+
+.social_links{
+	text-align: center;
+	display: inline;
+}
+
+.social_links > li{
+	display: inline;
+	margin-right:10px;
+}
+
+.sell_area{
+	height:300px;
+	width:100%;
+	background-image: url(back49.png);
+	margin-bottom: 20px;
+}
+
+.new1{
+	background-image: url(treeback.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 125px;
+	font-family: 'Rancho', cursive;
+	word-spacing: 20px;
+	margin-bottom: 20px;
+}
+
+.beta{
+	background-color: black !important;
+	opacity: 0.9;
+	height:100px;
+	width:200px;
+	margin-left: 250px;
+	margin-top: 100px;
+	font-family: 'Kelly Slab', cursive;
+-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.beta:hover{
+	opacity:0.6;
+	
+	margin-top: 50px;
+	height:150px;
+	width: 300px;
+}
+
+
+
+
+.single_product1{
+
+	width:230px;
+	height:230px;
+	margin: 10px 10px 30px 140px;
+	float:left;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.single_product1 img{ 
+	width:280px;
+	height:250px;
+}
+.contact_us{
+	background-image: url(back1.jpg);
+	height: 430px;
+	margin-top: 2px;
+	text-align: center;
+	color: black;
+	font-family: 'Delius', cursive;
+
+	
+}
+
+
+
+
+
+.grid {
+	 border-radius: 35px 35px 35px 35px;
+	 border-right: 25px;
+	font-family: 'Fredericka the Great', cursive;
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+
+.grid figure {
+	border-radius: 35px 35px 35px 35px;
+
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 200px;
+	max-width: 300px;
+	max-height: 300px;
+	width: 48%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	 border-radius: 35px 35px 35px 35px ;
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+
+
+figure.effect-max img {
+	 border-radius: 25px;
+	max-width: none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
+}
+
+figure.effect-max figcaption {
+	text-align: left;
+}
+
+figure.effect-max figcaption > div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	height: 50%;
+}
+
+figure.effect-max h2,
+figure.effect-max p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-max h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-max p {
+	color: rgba(255,255,255,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-max:hover img,
+figure.effect-max:hover p {
+	opacity: 1;
+}
+
+figure.effect-max:hover img,
+figure.effect-max:hover h2,
+figure.effect-max:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-max:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
+
+.xe{
+	height: 600px;
+	
+}
+
+.menu1:hover{
+	opacity: 0.7;
+}
+
+.dab{
+	margin-top: 15px;
+	margin-bottom: -25px;
+	font-family: 'Proza Libre', sans-serif;
+}
+
+.dab:hover{
+	opacity: 0.7;
+	font-family: 'Proza Libre', sans-serif;
+}
+
+.dropdown_toggle:hover{
+	opacity: 0.1;
+}
+
+.menu2{
+	margin-top: -5px;
+}
+
+.acc{
+	font-family: 'Courgette', cursive;
+	}
+
+.right{
+	font-family: 'Amiri', serif;
+}
+
+.lol img{
+	border-radius: 15px;
+	width: 100px;
+	height: 100px;
+	filter:blur(3px);
+	
+}
+
+.lol img:hover{
+	filter:blur(0px);
+	
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+	width:120px;
+	height: 120px;
+}

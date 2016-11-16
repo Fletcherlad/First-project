@@ -1,0 +1,160 @@
+XML Code:
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="marksheet.xslt"?>
+<!DOCTYPE marksheet [
+<!ELEMENT marksheet (student*)>
+<!ELEMENT student (fullname,seatno,dob?,board,marks)>
+<!ELEMENT fullname (#PCDATA)>
+<!ELEMENT seatno (#PCDATA)>
+<!ELEMENT dob (#PCDATA)>
+<!ELEMENT board (#PCDATA)>
+<!ELEMENT marks (phy,chem,maths,eng,voc)>
+<!ELEMENT phy (#PCDATA)>
+<!ELEMENT chem (#PCDATA)>
+<!ELEMENT maths (#PCDATA)>
+<!ELEMENT eng (#PCDATA)>
+<!ELEMENT voc (#PCDATA)>
+<!ATTLIST seatno passyear CDATA #REQUIRED> ]>
+
+
+<marksheet>
+<student>
+<fullname>ROMIT BONKAR</fullname>
+<seatno passyear="2012">10</seatno>
+<dob>21/09/1996</dob>
+<board>SSC</board>
+<marks>
+<phy>77</phy>
+<chem>82</chem>
+<maths>99</maths>
+<eng>72</eng>
+<voc>194</voc>
+</marks>
+</student>
+<student>
+<fullname>MANJIRI BHAT</fullname>
+<seatno passyear="2012">07</seatno>
+<dob>04/07/1996</dob>
+<board>SSC</board>
+<marks>
+<phy>72</phy>
+<chem>86</chem>
+<maths>98</maths>
+<eng>85</eng>
+<voc>190</voc>
+</marks>
+</student>
+<student>
+<fullname>MONAL DASWANI</fullname>
+<seatno passyear="2013">18</seatno>
+<dob>28/04/1996</dob>
+<board>CBSE</board>
+<marks>
+<phy>70</phy>
+<chem>80</chem>
+<maths>90</maths>
+<eng>71</eng>
+<voc>170</voc>
+</marks>
+</student>
+<student>
+<fullname>MANAS GANGWANI</fullname>
+<seatno  passyear="2012">22</seatno>
+<dob>06/12/1996</dob>
+<board>USC</board>
+<marks>
+<phy>79</phy>
+<chem>89</chem>
+<maths>92</maths>
+<eng>69</eng>
+<voc>184</voc>
+</marks>
+</student>
+<student>
+<fullname>DIPIKA JIANDANI</fullname>
+<seatno passyear="2012">29</seatno>
+<dob>07/07/1996</dob>
+<board>ICSE</board>
+<marks>
+<phy>90</phy>
+<chem>91</chem>
+<maths>97</maths>
+<eng>89</eng>
+<voc>192</voc>
+</marks>
+</student>
+<student>
+<fullname>RIDDHI KARKERA</fullname>
+<seatno passyear="2011">30</seatno>
+<dob>26/01/1996</dob>
+<board>SSC</board>
+<marks>
+<phy>75</phy>
+<chem>85</chem>
+<maths>95</maths>
+<eng>75</eng>
+<voc>190</voc>
+</marks>
+</student>
+</marksheet>
+
+XSL Code:
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:template match="/">
+    <html>
+<body style="font-family:Arial;font-size:12pt;background-color:#EEEEEE">
+        <table border="1" align="center" bordercolor="blue">
+          <caption><b>School Student Results</b></caption>
+          <thead bgcolor="">
+            <th>NAME</th>
+            <th>SEAT NO.</th>
+            <th>DATE OF BIRTH</th>
+            <th>BOARD</th>
+            <th>PHYSICS</th>
+            <th>CHEMISTRY</th>
+            <th>MATHS</th>
+            <th>ENGLISH</th>
+            <th>VOCATIONAL</th>
+          </thead>
+          <xsl:for-each select="marksheet/student">
+            <tr>
+              <td>
+                <xsl:value-of select="fullname"/>
+              </td>
+              <td>
+                <xsl:value-of select="seatno"/>
+              </td>
+              <td>
+                <xsl:value-of select="dob"/>
+              </td>
+              <td>
+                <xsl:value-of select="board"/>
+              </td>
+              <td>
+                <xsl:value-of select="marks/phy"/>
+               </td>
+                <td>
+                  <xsl:value-of select="marks/chem"/>
+                </td>
+                <td>
+                  <xsl:value-of select="marks/maths"/>
+                </td>
+                <td>
+                  <xsl:value-of select="marks/eng"/>
+                </td>
+                <td>
+                  <xsl:value-of select="marks/voc"/>
+                </td>
+            </tr>
+          </xsl:for-each>
+        </table><br/><br/>
+	
+	</body>
+    </html>
+  </xsl:template>
+  </xsl:stylesheet>
+
+
